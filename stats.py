@@ -20,4 +20,24 @@ def get_char_count(filepath):
         
         return dict_char_count
 
+
+def list_of_dict(dict):
+    list_of_dict = []
+    for key, value in dict.items():
+        new_dict = {}
+        new_dict["letter"]= key
+        new_dict["count"] = value
+        list_of_dict.append(new_dict)
+    return list_of_dict
+
+def sort_on_count(dict):
+    return dict['count']
+        
+    
+
+
+
+
+
+
     
